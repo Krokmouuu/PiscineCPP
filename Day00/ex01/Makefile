@@ -1,9 +1,9 @@
 NAME =		phonebook
 
 COMP =		c++
-CFLAGS =	-Wall -Werror -Wextra -std=c++98 -g -fsanitize=address
+CFLAGS =	-Wall -Werror -Wextra -std=c++98
 
-SRCS =		Phone.Class.cpp \
+SRCS =		PhoneBook.cpp \
 			Contact.cpp \
 			main.cpp \
 

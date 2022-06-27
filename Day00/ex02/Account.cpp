@@ -100,7 +100,7 @@ void Account::displayStatus(void) const
     cout << " index:" << Account::_accountIndex;
     cout << ";amount:" << Account::_amount;
     cout << ";deposit:" << Account::_nbDeposits;
-    cout << "withdrawals:" << Account::_nbWithdrawals;
+    cout << ";withdrawals:" << Account::_nbWithdrawals;
     cout << endl;
 }
 

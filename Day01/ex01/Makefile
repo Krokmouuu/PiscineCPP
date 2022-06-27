@@ -1,10 +1,9 @@
-NAME =		account
+NAME =		zombie
 
 COMP =		c++
 CFLAGS =	-Wall -Werror -Wextra -std=c++98
 
-SRCS =		tests.cpp \
-			Account.cpp \
+SRCS =		*.cpp \
 
 OBJS =		$(SRCS:%.cpp=%.o)
 

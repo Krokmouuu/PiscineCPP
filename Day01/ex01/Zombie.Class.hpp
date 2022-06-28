@@ -15,7 +15,7 @@ class Zombie
 
             string getName();
             void setName(string name);
-            void   announce(int i);
+            void   announce();
 
             Zombie();
             Zombie(string name);

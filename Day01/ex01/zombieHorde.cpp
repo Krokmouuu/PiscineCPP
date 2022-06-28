@@ -1,16 +1,16 @@
 #include "Zombie.Class.hpp"
 
-Zombie *zombieHorde(int n, string name)
+Zombie *zombieHorde(int N, string name)
 {
     Zombie *zombie;
 
-    if (n < 0)
+    if (N < 0)
         return NULL;
-    zombie = new Zombie[n];
-    for (int i = 1; i < n + 1; i++)
+    zombie = new Zombie[N];
+    for (int i = 1; i < N + 1; i++)
     {
         zombie[i].setName(name);
-        zombie->announce(i);
+        zombie[i].announce();
     }
     return zombie;
 }

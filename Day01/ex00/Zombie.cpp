@@ -14,7 +14,6 @@ Zombie::Zombie(string name)
 Zombie::~Zombie()
 {
     cout << getName() << " has been killed" << endl;
-    return ;
 }
 
 string  Zombie::getName() const

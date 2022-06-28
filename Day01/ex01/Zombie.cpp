@@ -10,9 +10,9 @@ string   Zombie::getName()
     return _name;
 }
 
-void    Zombie::announce(int i)
+void    Zombie::announce()
 {
-    cout << getName() << ": BraiiiiiiinnnzzzZ... " << i << endl;
+    cout << getName() << ": BraiiiiiiinnnzzzZ... " << endl;
 }
 
 Zombie::Zombie() : _name("Marc") {}

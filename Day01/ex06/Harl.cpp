@@ -1,5 +1,7 @@
 #include "Harl.Class.hpp"
 
+enum complaining {DEBUG,INFO,WARNING,ERROR,NOTHING};
+
 void    Harl::debug()
 {
     cout << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-specialketchup burger. \nI really do!" << endl << endl;
@@ -26,14 +28,12 @@ Harl::~Harl() {}
 
 void    Harl::complain(string level)
 {
-    enum complaining {DEBUG,INFO,WARNING,ERROR,NOTHING};
-
     int complain = \
             (level == "DEBUG") ? DEBUG :
             (level == "INFO") ? INFO :
             (level == "WARNING") ? WARNING :
             (level == "ERROR") ? ERROR :
-            (level != "DEBUG" || level != "INFO" || level != "WARNING" || level != "ERROR") ? NOTHING : NOTHING;
+            (level != "DEBUG" && level != "INFO" && level != "WARNING" && level != "ERROR") ? NOTHING : NOTHING;
 
    switch(complain)
    {

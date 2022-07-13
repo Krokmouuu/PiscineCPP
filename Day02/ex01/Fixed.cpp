@@ -13,7 +13,7 @@ float     Fixed::toFloat(void) const
     float f;
 
     f = (float)_value / (1 << bits);
-    return f;
+    return f; m
 }
 
 std::ostream   &operator<<(std::ostream &os, const Fixed& params)

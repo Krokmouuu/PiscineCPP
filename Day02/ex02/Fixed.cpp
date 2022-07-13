@@ -118,7 +118,10 @@ Fixed   Fixed::operator-(const Fixed& params)
 
 Fixed   Fixed::operator/(const Fixed& params)
 {
-    return _value /= params._value;
+    Fixed tmp;
+
+	tmp.setRawBits(_value / params._value * (1 << bits));
+	return tmp;
 }
 
 Fixed   Fixed::operator*(const Fixed& params)

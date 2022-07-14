@@ -1,5 +1,5 @@
-#ifndef CLAPTRAP_CLASS_HPP
-# define CLAPTRAP_CLASS_HPP
+#ifndef CLAPTRAP_HPP
+# define CLAPTRAP_HPP
 
 #include <iostream>
 #include <cstring>
@@ -27,7 +27,7 @@ class ClapTrap
         ~ClapTrap();
         ClapTrap &operator=(const ClapTrap& params);
 
-    private:
+    protected:
 
         string _name;
         unsigned int _health;

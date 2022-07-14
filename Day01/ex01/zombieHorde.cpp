@@ -1,4 +1,4 @@
-#include "Zombie.Class.hpp"
+#include "Zombie.hpp"
 
 Zombie *zombieHorde(int N, string name)
 {

@@ -1,4 +1,4 @@
-#include "HumanB.Class.hpp"
+#include "HumanB.hpp"
 
 void    HumanB::setWeapon(Weapon &weapon)
 {

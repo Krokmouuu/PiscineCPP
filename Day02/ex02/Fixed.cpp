@@ -1,4 +1,4 @@
-#include "Fixed.Class.hpp"
+#include "Fixed.hpp"
 
 const Fixed &Fixed::max(const Fixed& params1, const Fixed& params2)
 {

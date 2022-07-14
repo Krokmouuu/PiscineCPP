@@ -1,7 +1,7 @@
-#ifndef HUMANA_CLASS_HPP
-# define HUMANA_CLASS_HPP
+#ifndef HUMANA_HPP
+# define HUMANA_HPP
 
-#include "Weapon.Class.hpp"
+#include "Weapon.hpp"
 #include <iostream>
 #include <string>
 

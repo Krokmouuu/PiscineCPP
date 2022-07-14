@@ -1,12 +1,12 @@
-#include "ClapTrap.Class.hpp"
+#include "ClapTrap.hpp"
 
 int main()
 {
-    ClapTrap    a("Bonjour");
+    ClapTrap    a("Clap");
 
-    a.attack("Bonsoir");
-    a.takeDamage(9);
-    a.beRepaired(5);
+    a.attack("Trap");
+    a.takeDamage(0);
+    a.beRepaired(4);
 
     return (0);
 }

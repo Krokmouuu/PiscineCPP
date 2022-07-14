@@ -1,4 +1,4 @@
-#include "Fixed.Class.hpp"
+#include "Fixed.hpp"
 
 int     Fixed::toInt(void) const
 {
@@ -13,7 +13,7 @@ float     Fixed::toFloat(void) const
     float f;
 
     f = (float)_value / (1 << bits);
-    return f; m
+    return f;
 }
 
 std::ostream   &operator<<(std::ostream &os, const Fixed& params)

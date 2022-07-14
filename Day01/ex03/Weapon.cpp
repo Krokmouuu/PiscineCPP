@@ -1,4 +1,4 @@
-#include "Weapon.Class.hpp"
+#include "Weapon.hpp"
 
 
 void    Weapon::setType(string weapon)

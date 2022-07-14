@@ -1,4 +1,4 @@
-#include "Zombie.Class.hpp"
+#include "Zombie.hpp"
 
 void    Zombie::setName(string name)
 {

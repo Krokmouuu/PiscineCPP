@@ -1,5 +1,5 @@
-#ifndef FIXED_CLASS_HPP
-# define FIXED_CLASS_HPP
+#ifndef FIXED_HPP
+# define FIXED_HPP
 
 #include <string.h>
 #include <iostream>

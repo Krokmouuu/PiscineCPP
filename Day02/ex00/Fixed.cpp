@@ -1,4 +1,4 @@
-#include "Fixed.Class.hpp"
+#include "Fixed.hpp"
 
 void    Fixed::setRawBits(int const raw)
 {

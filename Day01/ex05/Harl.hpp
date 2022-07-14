@@ -1,5 +1,5 @@
-#ifndef HARL_CLASS_HPP
-# define HARL_CLASS_HPP
+#ifndef HARL_HPP
+# define HARL_HPP
 
 #include <iostream>
 #include <string>

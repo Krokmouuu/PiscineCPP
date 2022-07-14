@@ -1,4 +1,4 @@
-#include "Harl.Class.hpp"
+#include "Harl.hpp"
 
 enum complaining {DEBUG,INFO,WARNING,ERROR,NOTHING};
 

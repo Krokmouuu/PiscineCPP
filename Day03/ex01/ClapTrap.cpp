@@ -12,9 +12,6 @@ void    ClapTrap::beRepaired(unsigned int amount)
     _energy -= 1;
     cout << _name << " Repaired for " << amount << endl;
     _health += amount;
-    if (_health > 10)
-        while (_health > 10)
-            _health--;
     cout << _name << " has " << _health << " healths" << endl;
     cout << "Energy left : " << _energy << endl;
 }
@@ -58,9 +55,9 @@ void    ClapTrap::attack(const string &target)
         return ;
     }
     if (_damage <= 1)
-        cout << "Claptrack " <<_name << " deal " << _damage << " damage " << "to " << target << endl;
+        cout << _name << " deal " << this->_damage << " damage " << "to " << target << endl;
     else
-        cout << "Claptrack " <<_name << " deal " << _damage << " damages " << "to " << target << endl;
+        cout << _name << " deal " << this->_damage << " damages " << "to " << target << endl;
     _energy -= 1;
     cout << "Energy left : " << _energy << endl;
 }

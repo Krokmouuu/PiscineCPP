@@ -5,7 +5,7 @@ int main()
     ClapTrap    a("Clap");
 
     a.attack("Trap");
-    a.takeDamage(0);
+    a.takeDamage(1);
     a.beRepaired(4);
 
     return (0);

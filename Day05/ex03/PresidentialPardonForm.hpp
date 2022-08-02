@@ -14,6 +14,7 @@ class PresidentialPardonForm : public Form
         PresidentialPardonForm(const PresidentialPardonForm &);
         PresidentialPardonForm &operator=(const PresidentialPardonForm &);
         ~PresidentialPardonForm();
+    
 };
 
 #endif

@@ -2,16 +2,20 @@
 #define SERIALISATION_HPP
 
 #include <stdint.h>
+#include <iostream>
 
-class Serialisation
+using std::endl;
+using std::cout;
+using std::uintptr_t;
+
+typedef struct
 {
+    std::string  hello;
+    double       world;
+}
+Data;
 
     uintptr_t serialize(Data* ptr);
-    
-    Serialisation();
-    Serialisation(const Serialisation &);
-    Serialisation &operator=(const Serialisation &);
-    ~Serialisation();
-};
+    Data* deserialize(uintptr_t raw);
 
 #endif

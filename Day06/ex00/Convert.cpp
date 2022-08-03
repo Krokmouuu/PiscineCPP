@@ -84,16 +84,22 @@ void    Convert::toChar(string value)
 
 void Convert::toFloat(string value)
 {
+    cout << "float : ";
+    try
+    {
         size_t i = value.size();
         int k = 0;
         for (size_t oui = 0; oui < value.size(); oui++)
             if (value[oui] == '.')
                 k = 1;
-        float dou = std::stof(value);
-        cout << "float : ";
+        float dou = static_cast<float>(stof(value));
         if (value[i - 1] == '0')
             cout << dou << ".0f" << endl;
+        else if (value[i - 1] == 'f')
+            cout << dou << "f" << endl;
         else if (value[i - 1] == 'n')
+            cout << dou << "f" << endl;
+        else if (value[i] == 'n')
             cout << dou << "f" << endl;
         else if (value[i - 1] >= '0' && value[i - 1] <= '9' && k == 1)
             cout << dou << "f" << endl;
@@ -103,27 +109,41 @@ void Convert::toFloat(string value)
             cout << dou << ".0f" << endl;
         else
             cout << dou << endl;
+    }
+    catch (const exception &f)
+    {
+        throw Convert::NotConvertableException();
+    }
 }
 
 void Convert::toDouble(string value)
 {
-    double dou = std::stod(value);
-    size_t i = value.size();
-    int k = 0;
-    for (size_t b = 0; b < value.size(); b++)
-        if (value[b] == '.')
-            k = 1;
     cout << "double : ";
-    if (value[i - 1] == '0')
-        cout << dou << ".0" << endl;
-    else if (value[i] >= '0' && value[i] <= '9' && k == 1)
-        cout << dou << endl;
-    else if (value[i - 1] == '.')
-        cout << dou << ".0" << endl;
-    else if (value[i] != '.' && k == 0)
-         cout << dou << ".0" << endl;
-    else
-        cout << dou << endl;
+    try
+    {
+        double dou = static_cast<double>(stod(value));
+        size_t i = value.size();
+        int k = 0;
+        for (size_t b = 0; b < value.size(); b++)
+            if (value[b] == '.')
+                k = 1;
+        if (value[i - 1] == '0')
+            cout << dou << ".0" << endl;
+        else if (value[i] >= '0' && value[i] <= '9' && k == 1)
+            cout << dou << endl;
+        else if (value[i - 1] == '.')
+            cout << dou << ".0" << endl;
+        else if (value[i - 1] == 'n')
+            cout << dou << endl;
+        else if (k == 0 && value[i - 1] != 'f')
+            cout << dou << ".0" << endl;
+        else
+            cout << dou << endl;
+    }
+    catch (const exception &d)
+    {
+        throw Convert::NotConvertableException();
+    }
 }
 
 Convert::Convert() {}

@@ -11,6 +11,8 @@ using std::exception;
 using std::cout;
 using std::endl;
 using std::string;
+using std::stod;
+using std::stof;
 
 class Convert
 {

@@ -7,11 +7,11 @@
 int main()
 {
     unsigned int len = 10;
-    const Animal* meta = new Animal();
-    const Animal* i = new Cat();
-    const Animal* j = new Dog();
-    const WrongAnimal* iman = new WrongCat();
-    const WrongCat* taouil = new WrongCat();
+    Animal* meta = new Animal();
+    Animal* i = new Cat();
+    Animal* j = new Dog();
+    WrongAnimal* iman = new WrongCat();
+    WrongCat* taouil = new WrongCat();
     Animal* tab[len];
 
     delete meta;

@@ -17,7 +17,7 @@ int main()
     Form* rrf;
 
     rrf = someRandomIntern.makeForm("RobotomyRequestForm", "Bender");
-    
+
     // form1._name = "coucou"; //* Variable are private
     
     try

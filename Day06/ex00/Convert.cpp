@@ -108,7 +108,7 @@ void Convert::toFloat(string value)
         else if (value[i - 1] != '.' && k == 0)
             cout << dou << ".0f" << endl;
         else
-            cout << dou << endl;
+            cout << dou << "f" << endl;
     }
     catch (const exception &f)
     {

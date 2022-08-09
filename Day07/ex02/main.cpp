@@ -76,7 +76,6 @@ int main(int, char**)
     {
         std::cerr << no.what() << '\n';
     }
-
     delete [] mirror;
     return 0;
 }

@@ -3,17 +3,17 @@
 
 #include <iostream>
 #include <string>
-#include <cstring>
 
+using std::ostream;
 using std::cout;
 using std::endl;
+using std::string;
 
-template< typename T >
-void    iter(T *tab, size_t const len, void (*f)(T &))
+template <typename T>
+void iter(T const *lst, size_t len, void (*f)(T const &))
 {
     for (size_t i = 0; i < len; i++)
-        f(tab[i]);
-    return ;
+        f(lst[i]);
 }
 
-#endif
+#endif 

@@ -42,11 +42,11 @@ void    Convert::toInt(string value)
     cout << "int : ";
     try
     {
-        int num = stoi(value);
+        int num = static_cast<int>(stoi(value));
         if (num < INT_MIN || num > INT_MAX)
             throw Convert::NotPrintableException();
         else
-            cout << num << endl;
+            cout << static_cast<int>(num) << endl;
     }
     catch (const exception &s)
     {
@@ -64,19 +64,19 @@ void    Convert::toChar(string value)
     cout << "char : ";
     try
     {
-        int c = stoi(value);
-        if (c <= 126 && c >= 32)
-            cout << static_cast<char>(c) << endl;
-        else
-            throw Convert::NotPrintableException(); 
-    }
-    catch(const std::exception& e)
-    {
-        if (value.size() == 1)
+        if ((value[0] >= 'a' && value[0] <= 'z') || (value[0] >= 'A' && value[0] <= 'Z'))
         {
             cout << value[0] << endl;
             return ;
         }
+        int c = stoi(value);
+        if (c <= 126 && c >= 32)
+            cout << static_cast<char>(c) << endl;
+        else
+            throw Convert::NotPrintableException();
+    }
+    catch(const std::exception& e)
+    {
         throw Convert::NotConvertableException();
     }
  

@@ -28,8 +28,6 @@ int main(int, char**)
             std::cerr << "didn't save the same value!!" << std::endl;
             return 1;
         }
-        else if (mirror[i] == numbers[i])
-            std::cout << "they have the same value!!" << std::endl;
     }
     try
     {

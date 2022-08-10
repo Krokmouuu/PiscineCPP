@@ -50,15 +50,6 @@ class Array
         return *this;
     }
 
-    T operator[](int i) const
-    {
-        if (i < 0)
-            throw ImpossibleException();
-        else if (i >= static_cast<int>(this->getSize()))
-            throw ImpossibleException();
-        return this->_a[i];
-    }
-
     T &operator[](int i)
     {
         if (i < 0)

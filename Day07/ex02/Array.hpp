@@ -1,5 +1,4 @@
-#ifndef ARRAY_HPP
-#define ARRAY_HPP
+#pragma once
 
 #include <iostream>
 #include <iomanip>
@@ -86,5 +85,3 @@ class Array
         unsigned int _size;
         T *_a;
 };
-
-#endif
